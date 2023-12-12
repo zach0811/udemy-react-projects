@@ -48,19 +48,24 @@ export const Form = (props) => {
         />
       )}
       <div className="input">
-        <p>Enter Username</p>
-        <input onChange={handleUserName} value={userName} type="text"></input>
-        <p>Enter Age</p>
         <input
+          onChange={handleUserName}
+          value={userName}
+          placeholder="Username"
+          type="text"
+        ></input>
+
+        <input
+          placeholder="Age"
           onChange={handleAge}
           value={age}
           type="number"
           maxLength="3"
         ></input>
+        <button className="submit-button" type="submit" onClick={handleAddUser}>
+          Add User
+        </button>
       </div>
-      <button type="submit" onClick={handleAddUser}>
-        Add User
-      </button>
     </div>
   );
 };

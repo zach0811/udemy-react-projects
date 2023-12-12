@@ -22,6 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  height: 100vh;
 }
 
 .form {
@@ -29,21 +30,42 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  /* border: 2px solid #ccc;
+  border-radius: 8px; */
   margin-bottom: 20px;
   width: 500px;
 }
 
 .form input {
-  border: 2px solid #ccc;
+  border: 2px #ccc;
   border-radius: 8px;
   width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  background-color: white;
+  color: #fff;
+  opacity: 0.9;
 }
 
 .input {
   width: 75%;
   margin-bottom: 15px;
+}
+
+.submit-button {
+  border: 2px #ccc;
+  border-radius: 8px;
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  color: white;
+  background-color: #f7374b;
+  opacity: 0.9;
+}
+
+input::placeholder {
+  color: black;
+  padding-left: 10px; /* You can replace #999 with the desired color code */
 }
 
 /* blue: #14344B */
@@ -62,8 +84,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  /* border: 2px solid #ccc;
+  border-radius: 8px; */
   width: 500px;
 }
 
@@ -75,6 +97,9 @@ body {
   border: 2px solid #ccc;
   border-radius: 8px;
   margin-top: 10px;
+  background-color: white;
+  color: #fff;
+  opacity: 0.9;
 }
 
 .error-modal {
@@ -83,4 +108,5 @@ body {
   align-items: center;
   padding: 1rem;
   border: 2px solid #ccc;
+  border-radius: 8px;
 }
