@@ -17,7 +17,7 @@ export const Question = ({ onSelectAnswer, onSkipAnswer, questionKey }) => {
   if (answer.isCorrect !== null) {
     timer = 2000;
   }
-  const handleSelectAnswer = () => {
+  const handleSelectAnswer = (answer) => {
     setAnswer({
       selectedAnswer: answer,
       isCorrect: null,
